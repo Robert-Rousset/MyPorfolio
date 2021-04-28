@@ -1,0 +1,97 @@
+:root{
+    --primary: rgb(118,168,192);
+    --secondary: rgb(37, 150, 190);
+    --dark: rgb(34, 56, 67);
+    --light: rgb(239, 241, 243);
+    --complimentary: rgb(184, 116, 96);
+
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: no-repeat;
+    background-image: url(./Images/background.jpg);
+    background-size: 2000px;
+
+}
+
+/* HEADER */
+h1{
+    line-height: 100px;
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    padding-top: 100px;
+    font-size: 150px;
+    font-family: 'Allura', cursive;
+    text-align: center;
+    justify-content: center;
+}
+
+header {
+    height: 50vh;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -30px;
+}
+
+/* .top {
+    background-color: var(--primary);
+    padding: 20px;
+} */
+
+/* ABOUT ME */
+h2 {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+#aboutme {
+    background-color: var(--light);
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    padding-top: 100px;
+
+}
+.aboutme {
+    padding-top: 50px;
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+}
+
+.card{
+    width: 500px;
+}
+
+.profilePic {
+    position: relative;
+    bottom: 50px;
+    padding-left: 50px;
+    width: 200px;
+}
+.bio{
+    min-width: 400px;
+    padding-left: 100px;
+}
+
+
+
+
+/* WORK */
+
+#work {
+    margin-top: 200px;
+}
