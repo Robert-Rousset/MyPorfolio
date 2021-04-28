@@ -7,7 +7,7 @@
     <title>Rob's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lobster&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lobster&family=Montserrat:wght@300&family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="top">
@@ -16,9 +16,8 @@
 
 <aside class="navbar">
     <a href="#aboutme"><button class="button">About Me</button></a>
-    <a href="#work"><button class="button">Work</button></a>
+    <a href="#work"><button class="button">My Work</button></a>
     <a href="#contact"><button class="button">Contact</button></a>
-    <a href="#other"><button class="button">Other</button></a>
 </aside>
 </header>
     
@@ -27,6 +26,7 @@
 
 <article class="aboutme">
     <div class="card">
+        <div class="border">
         <div class="bio">
     <p>Hey my name is Rob and im studying to be a Web Developer. Throughout my course I have learnt the
         fundamentals of HTML, CSS and Javascript.
@@ -34,6 +34,7 @@
         My Hobbies include Music, Video Games, Art, Snowboarding and Coding!
     </p>
     </div>
+</div>
     </div>
     <figure>
         <img class="profilePic" src="./Images/Profile Pic.jpg" alt="Image of me (Robert Rousset)">
@@ -45,26 +46,26 @@
 <section id="work">
     <h2>My Work</h2>
 
-    <article>
+    <article class="work">
         <div class="cardBigger">
-            <a href="ye" alt="woo"></a>
+            <a href="https://robert-rousset.github.io/MMM-Farm-App/"><img class="mainProjectImage" src="./Images/Project Screenshots/Project1-Screenshot.png" alt="woo"></a>
             <p>Project1</p>
         </div>
-        <div class="card">
-            <a href="ye" alt="woo"></a>
+        <div class="workCard">
+            <a href="https://robert-rousset.github.io/Weather-Dashboard/"><img class="otherImage" src="./Images/Project Screenshots/Weather-Dashboard-Screenshot.png" alt="woo"></a>
             <p>Weather Dashboard</p>
         </div>
-        <div class="card">
-            <a href="ye" alt="woo"></a>
+        <div class="workCard">
+            <a href="https://robert-rousset.github.io/Daily-Planner/"><img class="otherImage" src="./Images/Project Screenshots/Work-Day-Scheduler.png" alt="woo"></a>
+            <p>Work Day Scheduler</p>
+        </div>
+        <div class="workCard">
+            <a href="https://robert-rousset.github.io/Robs-Quiz-Game/"><img class="otherImage" src="./Images/Project Screenshots/Quiz-Screenshot.png" alt="woo"></a>
             <p>Quiz Game</p>
         </div>
-        <div class="card">
-            <a href="ye" alt="woo"></a>
+        <div class="workCard">
+            <a href="https://robert-rousset.github.io/Password-Generator/"><img class="otherImage" src="./Images/Project Screenshots/Password-Generator-Screenshot.png" alt="woo"></a>
             <p>Password Generator</p>
-        </div>
-        <div class="card">
-            <a href="ye" alt="woo"></a>
-            <p>Code Refactor</p>
         </div>
         
     </article>
@@ -72,7 +73,6 @@
 </section>
 
 <section>
-    <div id="topbar">
         <h2 id="contact">Contact Me</h2>
 </section>
 <section>
