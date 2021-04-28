@@ -45,11 +45,6 @@ header {
     bottom: -30px;
 }
 
-/* .top {
-    background-color: var(--primary);
-    padding: 20px;
-} */
-
 /* ABOUT ME */
 h2 {
     font-size: 40px;
@@ -63,6 +58,7 @@ h2 {
     margin-top: 50px;
     padding: 20px;
     padding-top: 100px;
+    min-height: fit-content;
 
 }
 .aboutme {
@@ -78,13 +74,12 @@ h2 {
 
 .profilePic {
     position: relative;
-    bottom: 50px;
     padding-left: 50px;
     width: 200px;
 }
 .bio{
-    min-width: 400px;
-    padding-left: 100px;
+    min-width: 150px;
+    height: fit-content;
 }
 
 
@@ -93,5 +88,24 @@ h2 {
 /* WORK */
 
 #work {
+
+    background-color: var(--light);
+    width: 100%;
     margin-top: 200px;
+    padding: 20px;
+    padding-top: 100px;
+    min-height: fit-content;
+
+}
+
+/* CONTACT */
+
+#contact {
+    background-color: var(--light);
+    width: 100%;
+    margin-top: 200px;
+    padding: 20px;
+    padding-top: 100px;
+    min-height: fit-content;
+
 }
