@@ -8,6 +8,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -23,11 +24,12 @@ h1{
     line-height: 100px;
     text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
     color: white;
-    padding-top: 100px;
-    font-size: 6rem;
+    padding-top: 200px;
+    font-size: 10rem;
     font-family: 'Allura', cursive;
     text-align: center;
     justify-content: center;
+    transition: ease-in-out 3s;
 }
 
 header {
@@ -143,6 +145,7 @@ h2 {
     height: 310px;
     flex-wrap: wrap;
     margin: 10px;
+    filter: grayscale(.5);
 }
 .workCard p {
     position: relative;
@@ -161,6 +164,7 @@ h2 {
     min-height: 350px;
     border: 5px solid var(--dark);
     border-radius: 20px;
+    filter: grayscale(.7);
 }
 .otherImage {
     min-width: 200px;
@@ -169,6 +173,14 @@ h2 {
     min-height: 268px;
     border: 5px solid var(--dark);
     border-radius: 20px;
+}
+.mainProjectImage:hover {
+    transition: ease-in-out .5s;
+    filter: grayscale(0);
+}
+.workCard:hover {
+    transition: ease-in-out .5s;
+    filter: grayscale(0);
 }
 
 /* CONTACT */
@@ -193,23 +205,32 @@ h2 {
 #contact img {
     width: 50px;
     padding-right: 30px;
-    margin-top: 23px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+#contact img:hover {
+    transition: ease-in-out .5s;
+    width: 53px;
 }
 .contactImgBox {
     padding-bottom: 50px;
     padding-top: 20px;
     width: 100px;
-    border-right: 5px solid var(--primary);
+
 }
 #contact p {
     margin-top: 60px;
     padding-left: 30px;
     flex-wrap: wrap;
     font-weight: 900;
+    
 }
 .contactBox {
     width: 140px;
+    border-left: 5px solid var(--primary);
+    max-height: 380px;
 }
+
 
 footer {
     margin-top: 50px;
@@ -238,6 +259,12 @@ footer {
     border-radius: 20px;    
     letter-spacing: 2px;
     margin-top: 5px;
+    transition: ease-in-out 1s;
+}
+button:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+
 }
 
 
@@ -245,6 +272,13 @@ footer {
 
 
 
+@media screen and (max-width: 810px) {
+    h1 {
+        padding-top: 100px;
+        font-size: 6rem;
+    }
+    
+    
 @media screen and (max-width: 619px) {
     .bio {
         border-radius: 20px;
@@ -258,6 +292,4 @@ Just to make sure the email doesnt overflow */
 @media screen and (max-width: 420px) {
     .contact{
         justify-content: flex-start;
-    }
-    }
-}
+}}}}
