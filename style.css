@@ -179,7 +179,7 @@ h2 {
     padding: 20px;
     border-top: 5px solid var(--secondary);
     border-bottom: 20px solid var(--dark);
-    min-height: 100vh;
+    min-height: 800px;
     height: 500px;
 }
 .contact {
@@ -187,27 +187,29 @@ h2 {
     max-width: 1000px;
     display: flex;
     margin: auto;
-    flex-wrap: wrap;
     border-top: 5px solid var(--complimentary);
     justify-content: center;
 }
 #contact img {
-    width: 100%;
-    padding-right: 30px;
-    margin-top: 5px;
-}
-.contactImgBox {
-    padding-top: 10px;
     width: 50px;
     padding-right: 30px;
-    border-right: 2px solid var(--complimentary);
+    margin-top: 23px;
+}
+.contactImgBox {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 100px;
+    border-right: 5px solid var(--primary);
 }
 #contact p {
-    width: 100%;
-    margin-top: 30px;
+    margin-top: 60px;
     padding-left: 30px;
+    flex-wrap: wrap;
+    font-weight: 900;
 }
-
+.contactBox {
+    width: 140px;
+}
 
 footer {
     margin-top: 50px;
