@@ -98,7 +98,7 @@ h2 {
     border-bottom-left-radius: 20px;
     color: white ;
     text-align:justify;
-    line-height: 20px;
+    line-height: 23px;
 }
 
 /* WORK */
@@ -276,8 +276,9 @@ button:hover{
         padding-top: 100px;
         font-size: 8rem;
     }
-    
-    
+    .cardBigger{
+        margin-bottom: 150px;
+    }
 @media screen and (max-width: 619px) {
     .bio {
         border-radius: 20px;
