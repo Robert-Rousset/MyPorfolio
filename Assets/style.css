@@ -57,6 +57,7 @@ h2 {
 #aboutme {
     background-color: rgb(239, 241, 243,.95);
     margin-top: 50px;
+    padding-top: 20px;
     min-height: fit-content;
     border-top: 5px solid var(--primary);
     border-bottom: 20px solid var(--dark);
@@ -135,7 +136,6 @@ h2 {
     background-color: var(--light);
     margin-top: 100px;
     padding: 20px;
-    padding-top: 50px;
     border-top: 5px solid var(--primary);
     border-bottom: 20px solid var(--dark);
     min-height: fit-content;
@@ -335,10 +335,11 @@ button:hover{
 @media screen and (max-width: 619px) {
     .bio {
         border-radius: 20px;
+        padding-bottom: 80px;
     }
     .profilePic {
         border-radius: 20px;
-        margin-top: 16px;
+        margin-top: -10px;
     }
 /* 
 Just to make sure the email doesnt overflow */
