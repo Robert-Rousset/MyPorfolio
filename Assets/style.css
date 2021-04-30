@@ -346,4 +346,12 @@ Just to make sure the email doesnt overflow */
 @media screen and (max-width: 580px) {
     .contact{
         justify-content: flex-start;
-}}}}
+}
+@media screen and (max-width: 420px) {
+    #contact p{
+       padding-left: 10px;
+    }
+    .contactImgBox {
+        width:60px;
+    }
+    }}}}
