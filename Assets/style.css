@@ -1,7 +1,7 @@
 :root{
-    --primary: rgb(118,168,192);
-    --secondary: rgb(37, 150, 190);
-    --dark: rgb(34, 56, 67);
+    --primary: rgb(37, 150, 190);
+    --secondary: rgb(118,168,192);
+    --dark:rgb(34, 66, 95);
     --light: rgb(239, 241, 243);
     --complimentary: rgb(184, 116, 96);
 }
@@ -13,17 +13,18 @@
 
 p {
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 body{
-    background-image: url(./Images/background.jpg);
+    background-image: url(../Images/background.jpg);
 
 }
 
 /* HEADER */
 h1{
     line-height: 100px;
-    text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
-    color: white;
+    text-shadow: var(--dark) 0px 0px 3px, var(--dark) 0px 0px 4px;
+    color: rgb(255, 255, 255);
     padding-top: 200px;
     font-size: 10rem;
     font-family: 'Allura', cursive;
@@ -57,7 +58,7 @@ h2 {
     background-color: rgb(239, 241, 243,.95);
     margin-top: 50px;
     min-height: fit-content;
-    border-top: 5px solid var(--secondary);
+    border-top: 5px solid var(--primary);
     border-bottom: 20px solid var(--dark);
     padding-bottom: 100px;
     width: 100%;
@@ -83,7 +84,7 @@ h2 {
     width: 200px;
     height: 250px;
     bottom: 50px;
-    border: 10px solid rgb(34, 56, 67);
+    border: 10px solid var(--dark);
     margin-top: 50px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -92,7 +93,7 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     min-width: 300px;
     height: 210px;
-    background-color:  rgb(34, 56, 67);
+    background-color: var(--dark);
     padding: 30px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -100,6 +101,34 @@ h2 {
     text-align:justify;
     line-height: 23px;
 }
+#resume {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.resume {
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--secondary);
+    color: var(--light);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 20px;    
+    margin-top: 5px;
+    transition: ease-in-out .7s;
+   
+}
+.resume:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 /* WORK */
 #work {
@@ -107,7 +136,7 @@ h2 {
     margin-top: 100px;
     padding: 20px;
     padding-top: 50px;
-    border-top: 5px solid var(--secondary);
+    border-top: 5px solid var(--primary);
     border-bottom: 20px solid var(--dark);
     min-height: fit-content;
 }
@@ -132,7 +161,8 @@ h2 {
     bottom: 200px;
     padding-left: 50px;
     padding-right: 20px;
-    width: fit-content;
+    max-width: 200px;
+    min-width: fit-content;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: var(--dark)
@@ -144,7 +174,7 @@ h2 {
     height: 310px;
     flex-wrap: wrap;
     margin: 10px;
-    filter: grayscale(.5);
+    filter: saturate(.9);
 }
 .workCard p {
     position: relative;
@@ -163,7 +193,7 @@ h2 {
     min-height: 350px;
     border: 5px solid var(--dark);
     border-radius: 20px;
-    filter: grayscale(.7);
+    filter: saturate(.9);
 }
 .otherImage {
     min-width: 200px;
@@ -175,11 +205,11 @@ h2 {
 }
 .mainProjectImage:hover {
     transition: ease-in-out .5s;
-    filter: grayscale(0);
+    filter: saturate(1.5);
 }
 .workCard:hover {
     transition: ease-in-out .5s;
-    filter: grayscale(0);
+    filter: saturate(1.5);
 }
 
 /* CONTACT */
@@ -188,7 +218,7 @@ h2 {
     background-color: rgb(239, 241, 243);
     margin-top: 200px;
     padding: 20px;
-    border-top: 5px solid var(--secondary);
+    border-top: 5px solid var(--primary);
     border-bottom: 20px solid var(--dark);
     min-height: 800px;
     height: 500px;
@@ -203,18 +233,18 @@ h2 {
 }
 #contact img {
     width: 50px;
-    padding-right: 30px;
     margin-top: 20px;
     padding-bottom: 5px;
+
 }
 #contact img:hover {
     transition: ease-in-out .5s;
-    width: 53px;
+    filter: saturate(3)
 }
 .contactImgBox {
     padding-bottom: 50px;
     padding-top: 20px;
-    width: 100px;
+    width: 80px;
 
 }
 #contact p {
@@ -222,11 +252,12 @@ h2 {
     padding-left: 30px;
     flex-wrap: wrap;
     font-weight: 900;
+    letter-spacing: 1px;
     
 }
 .contactBox {
     width: 140px;
-    border-left: 5px solid var(--primary);
+    border-left: 5px solid var(--secondary);
     max-height: 380px;
 }
 
@@ -240,6 +271,23 @@ footer {
     padding-top: 30px;
 }
 
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
 
 
 
@@ -251,18 +299,23 @@ footer {
     padding-right: 10px;
     background-color: var(--dark);
     color: var(--light);
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: none;
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 20px;
     border-radius: 20px;    
-    letter-spacing: 2px;
     margin-top: 5px;
-    transition: ease-in-out 1s;
+    transition: all ease-out .7s;
 }
 button:hover{
-    background-color: var(--primary);
+    box-sizing: border-box;
+    background-color: rgb(37, 150, 190,.5);
     cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 
 }
 
@@ -274,7 +327,7 @@ button:hover{
 @media screen and (max-width: 810px) {
     h1 {
         padding-top: 100px;
-        font-size: 8rem;
+        font-size: 7rem;
     }
     .cardBigger{
         margin-bottom: 150px;
@@ -285,11 +338,11 @@ button:hover{
     }
     .profilePic {
         border-radius: 20px;
-        margin-top: -10px;
+        margin-top: 16px;
     }
 /* 
 Just to make sure the email doesnt overflow */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 580px) {
     .contact{
         justify-content: flex-start;
 }}}}
