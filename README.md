@@ -20,3 +20,8 @@ Contact:
 
 Phone layout: 
 ![Phone](./Images/PortfolioScreenshots/Phone.png)
+
+## License
+Copyright Robert Rousset, All rights reserved.
+
+Licensed under the MIT license.
